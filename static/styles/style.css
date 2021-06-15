@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+
+body{
+  background-image:url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box
+{
+  border: 1px solid black;
+}
+.buttonemi {
+  display: block;
+  width: 115px;
+  height: 25px;
+  background: #4E9CAF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+}
+  input{
+    width: 100%;
+    height: 40px;
+    color: black;
+    font-style: bold;
+    font-size: 20px;
+  }
+  .card{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10vh;
+  }
+  h1{
+    text-align: center;
+    color:black;
+    text-shadow:1px 1px rgb(158, 137, 137);
+  }
+  h3{
+    color: black;
+    }
+  .option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  label{
+    color:  #9484f0;
+   
+  }
+  .password-result{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .btn{
+    background-color: #1e21d4;
+    color:  #fff;
+    border: 0;
+    
+  }
+  .btn-sub{
+    background-color: #16a32b;
+    color:  #fff;
+    border: 0;
+    padding: 10px 30px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border: 1px solid white;
+    display: flex;
+    margin: auto;
+    font-weight: bolder;
+    
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: bolder;
+  }
+  /* .box{
+    background:black;
+    padding:20px 20px 20px 30px;
+    border-radius:5px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    width:80%;
+    height:20%;
+  } */
+  .container> .emicontainer
+  {
+    background: none;
+    box-shadow:-5px 5px 5px ;
+  }
+  .container> .resultcontainer
+  {
+    background: none;
+    box-shadow:5px 5px 5px ;
+  }
+
+  

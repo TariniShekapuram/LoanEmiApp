@@ -1,0 +1,15 @@
+click
+colorama
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+numpy
+pickle-mixin
+Werkzeug
+sklearn
+flask_bootstrap
+flask_wtf
+wtforms
+pandas
+gunicorn

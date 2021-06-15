@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">LoanApp</a>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="{{url_for('predict')}}">Predict</a>
+        <a class="nav-item nav-link active" href="#">EMI</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container d-flex">
+    <div class="col-sm-6 col-12 card emicontainer" >
+          <H1>EMI Calculator</H1>
+          <form name="loan-form">
+            <div class='loanBlock'>
+              <h3>Loan Amount</h3>
+              <input type=number id="amount" style="border-radius:5px"><br>
+            </div>
+            <br>
+            <div class='aprBlock'>
+              <h3>Interest Rate</h3>
+              <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
+            </div>
+            <br>
+            <div class='tenureBlock'>
+              <h3>Time Periods(yrs)</h3>
+            <input type=number name="tenure" id="tenure" style="border-radius:5px"><br>
+            <br>
+            </div>
+            <div class="d-flex">
+              <button style="border-radius:2px" id="find" onclick=calc() class="btn-sub">EMI</button>
+            </div>
+          </form>
+      </div>
+      <div class="col-sm-5 col-12pl-3 card resultcontainer">
+        <h1>Results</h1><br/>
+        <h3>Total EMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="emi"></span></h3>
+        <h3>Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;<span id="totalAmt"></span></h3>
+        <h3>Total Interest:&nbsp;&nbsp;&nbsp;&nbsp;<span id="totalInt"></span></h3>
+        <div id="chartContainer" style="height: 300px; width: 100%" ></div>
+      </div>
+         
+  </div>
+  <script src="{{url_for('static',filename='js/emi.js')}}"></script>
+</body>
+  
+</html>
